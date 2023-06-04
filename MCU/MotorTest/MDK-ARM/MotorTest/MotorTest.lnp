@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"motortest\startup_stm32g431xx.o"
+"motortest\main.o"
+"motortest\stm32g4xx_it.o"
+"motortest\stm32g4xx_hal_msp.o"
+"motortest\stm32g4xx_hal_tim.o"
+"motortest\stm32g4xx_hal_tim_ex.o"
+"motortest\stm32g4xx_hal_pwr_ex.o"
+"motortest\stm32g4xx_hal.o"
+"motortest\stm32g4xx_hal_rcc.o"
+"motortest\stm32g4xx_hal_rcc_ex.o"
+"motortest\stm32g4xx_hal_flash.o"
+"motortest\stm32g4xx_hal_flash_ex.o"
+"motortest\stm32g4xx_hal_flash_ramfunc.o"
+"motortest\stm32g4xx_hal_gpio.o"
+"motortest\stm32g4xx_hal_exti.o"
+"motortest\stm32g4xx_hal_dma.o"
+"motortest\stm32g4xx_hal_dma_ex.o"
+"motortest\stm32g4xx_hal_pwr.o"
+"motortest\stm32g4xx_hal_cortex.o"
+"motortest\stm32g4xx_hal_uart.o"
+"motortest\stm32g4xx_hal_uart_ex.o"
+"motortest\system_stm32g4xx.o"
+--strict --scatter "MotorTest\MotorTest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MotorTest.map" -o MotorTest\MotorTest.axf
